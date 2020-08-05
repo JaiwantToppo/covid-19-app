@@ -1,36 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+html,
 body {
 	margin: 0;
-	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-	color: #333;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 0.5em 0;
-	font-weight: 400;
-	line-height: 1.2;
+body {
+	background-image: url("https://images.unsplash.com/photo-1595907386001-b42da074dd8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-h1 {
-	font-size: 2em;
+.box {
+	background-color: rgba(255, 255, 255, 0.3);
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	line-height: 1;
+	backdrop-filter: blur(50px);
+	width: 100vw;
+	position: center;
 }
 
-a {
-	color: inherit;
+.container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
 }
 
-code {
-	font-family: menlo, inconsolata, monospace;
-	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
-	border-radius: 2px;
+p {
+	color: black;
+//background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+//-webkit-background-clip: text;
+//-webkit-text-fill-color: transparent;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-@media (min-width: 400px) {
-	body {
-		font-size: 16px;
-	}
+/*
+.logo-container {
+
+    font-weight: 400;
+    font-size: 180px;
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 1100px;
 }
+*/
