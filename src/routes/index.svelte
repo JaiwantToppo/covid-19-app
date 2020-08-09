@@ -2,10 +2,20 @@
     import CovidStat from '../components/CovidStat.svelte';
     import CovidChart from '../components/CovidChart.svelte';
     import TableContainer from '../components/TableContainer.svelte';
+    import Nav from '../components/Nav.svelte';
 </script>
 
-<CovidStat/>
+<body>
+<nav>
+    <Nav/>
+</nav>
 
-<CovidChart/>
+<main>
+    <CovidStat/>
 
-<TableContainer/>
+    <CovidChart/>
+
+    <TableContainer/>
+</main>
+</body>
+
