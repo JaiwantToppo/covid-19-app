@@ -5,12 +5,22 @@
     import Nav from '../components/Nav.svelte';
 </script>
 
+<svelte:head>
+    <title>Covid 19 US Tracker</title>
+</svelte:head>
+
 <body>
+
 <nav>
     <Nav/>
 </nav>
 
 <main>
+    <div class="section header">
+        <div class="container">
+            <h1>Covid 19 - US</h1>
+        </div>
+    </div>
     <CovidStat/>
 
     <CovidChart/>
