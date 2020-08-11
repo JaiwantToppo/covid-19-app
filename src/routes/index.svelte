@@ -18,7 +18,6 @@
     import Nav from '../components/Nav.svelte';
 
     export let usStats;
-    console.log(usStats, 'usStats');
 </script>
 
 <svelte:head>
@@ -34,10 +33,10 @@
 <main>
     <div class="section header">
         <div class="container">
-            <h1>Covid 19 - US</h1>
+            <h1>COVID-19  US</h1>
         </div>
     </div>
-    <CovidStat/>
+    <CovidStat {...usStats}/>
 
     <CovidChart/>
 
