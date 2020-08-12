@@ -1,6 +1,18 @@
 <script context="module">
+    import stateNames from '../data/stateNames.js';
+
     export async function preload(page) {
-        return {state: page.params['state']}
+        const state = page.params['state'];
+        if (stateNames.find(s => s.abbreviation === state) === undefined) {
+            this.error(404, 'State not Found');
+            return;
+        }
+
+        try {
+            return {state: page.params['state']}
+        } catch (e) {
+            this.error(500, "There was an error in calling the api. Please try again in 5 mintues.");
+        }
     }
 </script>
 

@@ -18,16 +18,14 @@
     }
 
     .column {
-        padding: 1.7rem;
+        padding: 1.5rem;
     }
-    .updated {
-        padding: .96rem;
-    }
+
 </style>
 
 <div class="section">
     <div class="container">
-        <div class="columns">
+        <div class="columns is-mobile">
             <h2 class="is-3 column">Cases: {cases}</h2>
             <h2 class="is-3 column">Deaths: {deaths}</h2>
             <h2 class="is-3 column">Recovered: {recovered}</h2>
@@ -38,7 +36,7 @@
 
 <div class="section">
     <div class="container">
-        <div class="columns">
+        <div class="columns is-mobile">
             <h2 class="is-3 column">Tested: {tested}</h2>
             <h2 class="is-3 column">Hospitalized: {hospitalized}</h2>
             <h2 class="is-3 column">Total ICU: {icu}</h2>
