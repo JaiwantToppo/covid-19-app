@@ -2,9 +2,9 @@
     import requests from '../data/requests.js';
     export async function preload() {
         try {
-            const usStats = await requests.usStats()
-
-            return { usStats };
+            const usStats = await requests.usStats();
+            const historicUS = await requests.historicUS();
+            return { usStats, historicUS };
         } catch (e) {
             this.error(500, "There was an error in calling the api. Please try again in 5 mintues.");
         }
@@ -18,6 +18,7 @@
     import Nav from '../components/Nav.svelte';
 
     export let usStats;
+    export let historicUS;
 </script>
 
 <svelte:head>
