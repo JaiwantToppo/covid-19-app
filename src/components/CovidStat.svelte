@@ -23,7 +23,7 @@
 
 </style>
 
-<div class="section">
+<div class="section" id="stats">
     <div class="container">
         <div class="columns is-mobile">
             <h2 class="is-3 column">Cases: {cases}</h2>
@@ -35,7 +35,7 @@
 </div>
 
 <div class="section">
-    <div class="container">
+    <div class="container" id="stats">
         <div class="columns is-mobile">
             <h2 class="is-3 column">Tested: {tested}</h2>
             <h2 class="is-3 column">Hospitalized: {hospitalized}</h2>
@@ -44,3 +44,5 @@
         </div>
     </div>
 </div>
+<br>
+<br>

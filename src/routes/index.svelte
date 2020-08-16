@@ -3,8 +3,8 @@
     export async function preload() {
         try {
             const usStats = await requests.usStats();
-            const historicUS = await requests.historicUS();
-            return { usStats, historicUS };
+            const historic = await requests.historicUS();
+            return { usStats, historic };
         } catch (e) {
             this.error(500, "There was an error in calling the api. Please try again in 5 mintues.");
         }
@@ -18,7 +18,7 @@
     import Nav from '../components/Nav.svelte';
 
     export let usStats;
-    export let historicUS;
+    export let historic;
 </script>
 
 <svelte:head>
@@ -32,16 +32,18 @@
 </nav>
 
 <main>
-    <div class="section header">
+    <div class="section header" id="main">
         <div class="container">
-            <h1>COVID-19  US</h1>
+            <h1>COVID-19</h1>
         </div>
     </div>
     <CovidStat {...usStats}/>
 
-    <CovidChart/>
+    <CovidChart historicData={historic} title="US Covid-19" />
 
     <TableContainer/>
 </main>
 </body>
 
+<style>
+</style>
